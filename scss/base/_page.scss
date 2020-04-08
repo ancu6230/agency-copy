@@ -30,7 +30,8 @@ h6 {
 }
 
 .page-section {
-  padding: 100px 0;
+  /*padding: 100px 0;*/ /*made smaller to fit about section better*/
+  padding: 75px 0;
   h2.section-heading {
     font-size: 40px;
     margin-top: 0;
@@ -42,9 +43,33 @@ h6 {
     font-style: italic;
     margin-bottom: 75px;
     text-transform: none;
+	line-height: 1.5;/*added this*/
     @include serif-font;
   }
 }
+
+.page-section-b {
+  /*padding: 100px 0;*/ /*made smaller to fit about section better*/
+  padding: 75px 0;
+  h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 35px;
+    text-transform: none;
+	line-height: 1.5;/*added this*/
+    @include serif-font;
+  }
+}
+
+
+
+
 @media(min-width:768px) {
   section {
     padding: 150px 0;
